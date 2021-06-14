@@ -1,0 +1,12 @@
+{
+  "name": "imagedropjs",
+  "version": "1.0.0",
+  "description": "Small, simple drag&drop image uploader for your website",
+  "main": "imagedrop.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
