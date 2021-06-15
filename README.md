@@ -45,9 +45,9 @@
 
 ## Options:
 
-# Options must be an object type and all values must be string types:
+### Options must be an object type and all values must be string types:
 
-# You can pass the options like this(these are the default values):
+### You can pass the options like this(these are the default values):
 
 ```
 <script>
