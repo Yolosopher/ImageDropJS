@@ -10,7 +10,7 @@ class ImageDrop {
 		this.borderRadius =
 			Boolean(options.borderRadius) !== undefined
 				? options.borderRadius
-				: 'grey'
+				: '12px'
 		this.borderColor = Boolean(options.borderColor)
 			? options.borderColor
 			: 'grey'
@@ -25,7 +25,7 @@ class ImageDrop {
 		this.fontFamily = Boolean(options.fontFamily)
 			? options.fontFamily
 			: 'san-serif'
-		this.fontSize = Boolean(options.fontSize) ? options.fontSize : '20px'
+		this.fontSize = Boolean(options.fontSize) ? options.fontSize : '30px'
 	}
 	useFileReader = async (file) => {
 		let reader = new FileReader()
@@ -133,9 +133,9 @@ let opts = {
 	inputName: 'images',
 	textContent: 'Drag or Drop Images Here',
 	borderColor: 'grey',
-	borderWidth: '2px',
+	borderWidth: '1px',
 	borderRadius: '12px',
-	fontSize: '50px',
+	fontSize: '30px',
 	fontFamily: 'san-serif',
 }
 new ImageDrop('image__drop2323', opts).init()

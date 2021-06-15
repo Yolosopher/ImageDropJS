@@ -42,3 +42,24 @@
         </script>
     </body>
 ```
+
+## Options:
+
+# Options must be an object type and all values must be string types:
+
+# You can pass the options like this(these are the default values):
+
+```
+<script>
+    let options = {
+        inputName: 'images',
+        textContent: 'Drag or Drop Images Here',
+        borderColor: 'grey',
+        borderWidth: '1px',
+        borderRadius: '12px',
+        fontSize: '30px',
+        fontFamily: 'san-serif',
+    }
+    new ImageDrop("your_div_classname", options).init()
+</script>
+```
