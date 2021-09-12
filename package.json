@@ -1,6 +1,6 @@
 {
   "name": "imagedropjs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Small, simple drag&drop image uploader for your website",
   "main": "imagedrop.js",
   "type": "module",
