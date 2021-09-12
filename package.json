@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Small, simple drag&drop image uploader for your website",
   "main": "imagedrop.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

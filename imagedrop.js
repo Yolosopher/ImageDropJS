@@ -1,4 +1,18 @@
-class ImageDrop {
+import fs from 'fs'
+// DIRNAME
+import { fileURLToPath } from 'url'
+import { dirname } from 'path'
+const __dirname = dirname(fileURLToPath(import.meta.url))
+
+const getCss = () => {
+	let css = fs.readFileSync(__dirname + '/imagedrop.css', 'utf8')
+	return css
+}
+
+export const IncludeCss = () => {
+	document.head.prepend(`<style>${getCss()}</style>`)
+}
+export class ImageDrop {
 	constructor(className, options) {
 		this.className = className
 		this.parent = null
@@ -129,13 +143,15 @@ class ImageDrop {
 	}
 }
 
-let opts = {
-	inputName: 'images',
-	textContent: 'Drag or Drop Images Here',
-	borderColor: 'grey',
-	borderWidth: '1px',
-	borderRadius: '12px',
-	fontSize: '30px',
-	fontFamily: 'san-serif',
-}
-new ImageDrop('image__drop2323', opts).init()
+// export ImageDropCss
+
+// let opts = {
+// 	inputName: 'images',
+// 	textContent: 'Drag or Drop Images Here',
+// 	borderColor: 'grey',
+// 	borderWidth: '1px',
+// 	borderRadius: '12px',
+// 	fontSize: '30px',
+// 	fontFamily: 'san-serif',
+// }
+// new ImageDrop('image__drop2323', opts).init()
