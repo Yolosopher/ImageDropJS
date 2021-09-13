@@ -1,16 +1,7 @@
-import fs from 'fs'
-// DIRNAME
-import { fileURLToPath } from 'url'
-import { dirname } from 'path'
-const __dirname = dirname(fileURLToPath(import.meta.url))
-
-const getCss = () => {
-	let css = fs.readFileSync(__dirname + '/imagedrop.css', 'utf8')
-	return css
-}
-
 export const IncludeCss = () => {
-	document.head.prepend(`<style>${getCss()}</style>`)
+	const style = document.createElement('style')
+	style.innerHTML = '*{margin:0;padding:0}.image__drop{min-height:300px;height:-webkit-max-content;height:-moz-max-content;height:max-content;width:100%;border-radius:12px;--imagebox-heiht: 100px;border:2px solid;-webkit-box-sizing:border-box;box-sizing:border-box}.image__drop *{-webkit-box-sizing:border-box;box-sizing:border-box}.image__drop__label{cursor:pointer;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;width:100%;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.image__drop__label input{display:none}.image__drop__label__box{width:100%;min-height:300px;padding:10px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.image__drop__imagebox{display:-ms-grid;display:grid;grid-gap:5px;-ms-grid-columns:(1fr)[4];grid-template-columns:repeat(4, 1fr)}.image__drop__imagebox__item{width:100%;min-height:var(--imagebox-height);border-radius:8px}.image__drop__imagebox__item img{width:100%;height:100%;-o-object-fit:cover;object-fit:cover}.image__drop.fileadded label{-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}.image__drop.fileadded .image__drop__text{display:none}.image__drop.fileadded .image__drop__imagebox{height:100%;width:100%}'
+	document.head.prepend(style)
 }
 export class ImageDrop {
 	constructor(className, options) {
