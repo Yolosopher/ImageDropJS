@@ -1,13 +1,21 @@
 {
   "name": "imagedropjs",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "description": "Small, simple drag&drop image uploader for your website",
   "main": "imagedrop.js",
   "type": "module",
+  "keywords": [],
+  "author": "Yolosopher",
+  "license": "ISC",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "Yolosopher",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yolosopher/ImageDropJS.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Yolosopher/ImageDropJS/issues"
+  },
+  "homepage": "https://github.com/Yolosopher/ImageDropJS#readme"
 }
