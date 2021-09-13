@@ -52,7 +52,7 @@
 ```
 <script>
     let options = {
-        inputName: 'images',
+        inputName: 'images', // Necessary
         textContent: 'Drag or Drop Images Here',
         borderColor: 'grey',
         borderWidth: '1px',
